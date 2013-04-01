@@ -12,6 +12,7 @@ This is my personal kick-start (in Arabic) template that is built around the fol
 	1.	Ion_auth
 	2.	CI_Template
 	3.	Twitter CI library by Simon Emms
+	4.	CI_Curl
 * __jQuery:__
 	1.	TimeAgo
 	2.	Form (for ajax calls).
