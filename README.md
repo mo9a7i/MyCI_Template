@@ -4,10 +4,10 @@
 
 This is my personal kick-start (in Arabic) template that is built around the following:
 * Twitter Bootstrap
-*	1.	FontAwsome
-*	2.	x-editible
-*	3.	Datepicker
-*	4.	Bootstro
+	1.	FontAwsome
+	2.	x-editible
+	3.	Datepicker
+	4.	Bootstro
 * Codeigniter:
 *	1.	Ion_auth
 *	2.	CI_Template
