@@ -3,16 +3,16 @@
 ## What is this?
 
 This is my personal kick-start (in Arabic) template that is built around the following:
-* Twitter Bootstrap
+* __Twitter Bootstrap:__
 	1.	FontAwsome
 	2.	x-editible
 	3.	Datepicker
 	4.	Bootstro
-* Codeigniter:
+* __Codeigniter:__
 	1.	Ion_auth
 	2.	CI_Template
 	3.	Twitter CI library by Simon Emms
-* jQuery:
+* __jQuery:__
 	1.	TimeAgo
 	2.	Form (for ajax calls).
 	3.	Jcrop
