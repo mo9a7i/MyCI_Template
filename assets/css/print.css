@@ -1,0 +1,14 @@
+.rainbow,#topBar,#report,#header-content,.thumbnails,.joke_tags,.joke_meta,#sidebar,footer > .container > .row-fluid,#addJoke,#filter_popup, #LoadMoreButton {
+	display: none;.
+}
+article {
+    border-bottom:1px dotted #000000;
+}
+
+article:last-child {
+    border-bottom:none;
+}
+
+article:last-child:after {
+    content:"نهاية الصفحة";
+}

@@ -1,0 +1,240 @@
+
+#rating h2 {
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 20px;
+	margin: 0 0 20px 0;
+	padding: 0;
+	text-align: center;
+}
+#rating h4 {
+	color: #545454;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+	margin: 0 0 20px 0;
+	padding: 0;
+	text-align: center;
+}
+#rating a {
+	color: #333;
+}
+
+/* Table */
+#rating #data-table {
+	border: none; /* Turn off all borders */
+	border-top: 1px solid #ccc;
+	width: 540px;
+}
+#rating #data-table caption {
+	color: #545454;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 20px;
+	margin: 0 0 20px 0;
+	padding: 0;
+	text-align: center;
+}
+#rating #data-table thead {
+	background: #f0f0f0;
+}
+#rating #data-table th, 
+#data-table td {
+	border: none; /* Turn off all borders */
+	border-bottom: 1px solid #ccc;
+	margin: 0;
+	padding: 10px;
+	text-align: left;	
+}
+
+/* Toggle */
+#rating .toggles {
+	background: #ebebeb;	
+	color: #545454;
+	height: 20px;
+	padding: 15px;
+}
+#rating .toggles p {
+	margin: 0;
+}
+#rating .toggles a {
+	background: #222;
+	border-radius: 3px;	
+	color: #fff;
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 0 6px;
+	text-decoration: none;
+}
+#rating .toggles a:hover {
+	background: #666;
+}
+#rating #reset-graph-button {
+	float:right;
+}
+
+/* Graph */
+/* Containers */
+#rating #wrapper {
+	height: auto;
+	
+	margin: 0 auto;
+	position: relative;	
+	width: 540px;
+}
+#rating #figure {
+	height: auto;
+	position: relative;
+}
+#rating #figure ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#rating .graph {
+	height: 200px;
+	position: relative;
+}
+
+/* Legend */
+#rating .legend {
+	background: #f0f0f0;
+	border-radius: 4px;
+	bottom: 0;
+	position: absolute;
+	text-align: left;
+	width: 540px;	
+}
+#rating .legend li {
+	display: block;
+	float: left;
+	height: 20px;
+	margin: 0;
+	padding: 10px 30px;
+	width: 120px;
+}
+#rating .legend span.icon {
+	background-position: 50% 0;
+	border-radius: 2px;
+	display: block;
+	float: left;
+	height: 16px;
+	margin: 2px 10px 0 0;
+	width: 16px;	
+}
+
+/* X-Axis */
+#rating .x-axis {
+	bottom: 0;
+	color: #555;
+	position: absolute;
+	text-align: center;
+	width: 540px;
+}
+#rating .x-axis li {
+	float: left;
+	margin: 0 9px;
+	padding: 5px 0;
+	width: 90px;	
+}
+
+/* Y-Axis */
+#rating .y-axis {
+	color: #555;
+	position: absolute;
+	text-align: right;
+	width: 100%;
+}
+#rating .y-axis li {
+	border-top: 1px dotted #E3E3E3;
+	display: block;
+	height: 40px;
+	width: 100%;
+}
+#rating .y-axis li span {
+	display: block;
+	margin: -10px 0 0 -60px;
+	padding: 0 10px;
+	width: 40px;
+}
+
+/* Graph Bars */
+#rating .bars {
+	height: 164px;
+	position: absolute;
+	width: 100%;
+	z-index: 10;
+}
+#rating .bar-group {
+	float: left;
+	height: 100%;
+	margin: 0 15px;
+	position: relative;
+	width: 77px;
+}
+#rating .bar {
+	border-radius: 3px 3px 0 0;
+	bottom: 0;
+	cursor: pointer;	
+	height: 0;
+	position: absolute;
+	text-align: center;
+	width: 24px;
+}
+#rating .bar.fig0 {
+	left: 26px;
+}
+#rating .bar.fig1 {
+	left: 26px;
+}
+#rating .bar.fig2 {
+	left: 52px;
+}
+#rating .bar span {
+	background: #fefefe;
+	border-radius: 3px;
+	left: -8px;
+	display: none;
+	margin: 0;
+	position: relative;
+	text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0;
+	width: 40px;
+	z-index: 20;
+	
+	-webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 1px 4px;
+	box-shadow: rgba(0, 0, 0, 0.6) 0 1px 4px;
+}
+#rating .bar:hover span {
+	display: block;
+	margin-top: -25px;
+}
+
+#rating #data-table {
+	display: none;
+}
+#rating .bar span {
+	background: #fefefe url(../img/info-bg.gif) 0 100% repeat-x;
+}
+#rating .bar-group:first-child .fig0 {
+	background: #747474 url(../img/bar-01-bg.gif) 0 0 repeat-y;
+}
+#rating .bar-group:first-child + .bar-group .fig0 {
+	background: #65c2e8 url(../img/bar-02-bg.gif) 0 0 repeat-y;
+}
+#rating .bar-group:first-child + .bar-group + .bar-group .fig0 {
+	background: #eea151 url(../img/bar-03-bg.gif) 0 0 repeat-y;
+}
+
+#rating .bar-group:first-child + .bar-group + .bar-group + .bar-group .fig0 {
+	background: #9eda67 url(../img/bar-04-bg.gif) 0 0 repeat-y;
+}
+
+#rating .bar-group:first-child + .bar-group + .bar-group + .bar-group + .bar-group .fig0 {
+	background: #ffec4f url(../img/bar-05-bg.gif) 0 0 repeat-y;
+}
+
+#rating ul.x-axis {
+	font-family:tahoma;
+	font-size:12px;
+}

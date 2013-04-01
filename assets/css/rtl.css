@@ -1,0 +1,171 @@
+/* ###################################################
+	______ __                                       
+	|  ____/ /                                       
+	| |__ / /_  ___ _ __  _   _   ___ ___  _ __ ___  
+	|  __| '_ \/ __| '_ \| | | | / __/ _ \| '_ ` _ \ 
+	| |  | (_) \__ \ | | | |_| || (_| (_) | | | | | |
+	|_|   \___/|___/_| |_|\__, (X)___\___/|_| |_| |_|
+						   __/ |                     
+						  |___/                
+	This is F6sny.com's CSS RTL file, feel free to copy anything you like.
+	PS. most of the features here are abstracted from twitter bootstrap, you should check it out!
+	~! Mohannad.
+##################################################### */
+
+/* Spans */
+.row-fluid > [class*="span"]{
+	margin-right:2.5641%;
+	margin-left:auto;
+	float:right;
+}
+.row-fluid > [class*="span"]:first-child{
+	margin-right:0px;
+	margin-left:auto;
+}
+.row-fluid [class*="span"]{
+	margin-left:0px;
+}
+
+/* Popovers and tooltips */
+.popover.top .arrow:after {
+    margin-right: -10px;
+	margin-left:auto;
+}
+
+/* Navigation */
+.nav{
+	margin-right:0px;
+}
+.navbar .nav {
+    float: right;
+    left: none !important;
+	right:0;
+    margin: 0 0 0 10px;
+}
+.navbar .nav > li {
+    float: right;
+}
+.datepicker.dropdown-menu{
+	right:auto;
+	direction:ltr;
+}
+.navbar .brand {
+    float: right;
+	margin-left: 0px;
+    margin-right: 0px;
+}
+.navbar-search{
+	margin-left:12px;
+}
+.dropdown .caret {
+    margin-left: 0px;
+	margin-right:8px;
+}
+.dropdown-menu{
+	left:auto;
+	right:0px;
+}
+.navbar .dropdown-menu:after{
+	left:auto;
+	right:10px;
+}
+.navbar .dropdown-menu:before{
+	left:auto;
+	right:9px;
+}
+
+/* Row and row fluid */
+.row {
+    margin-left: auto;
+	margin-right:-30px;
+}
+.row-fluid [class*="span"] {
+    float: right;
+	margin-right: 0;
+    margin-left: 30px;
+}
+
+
+.radio input[type="radio"], .checkbox input[type="checkbox"] {
+    float: right;
+    margin-right: 0;
+	margin-left:6px;
+}
+
+/* Alerts */
+.alert {
+    padding: 8px 14px 8px 35px;    
+}
+.alert .close {
+    left: -21px;
+	right:auto;
+    top: -2px;
+}
+.close {
+    float: left;
+}
+ul, ol {
+    margin: 0 25px 9px 0;
+}
+ul.inline, ol.inline {
+    list-style: none outside none;
+    margin: 0;
+	padding:0px;
+}
+.form-horizontal .control-label {
+    float: right;
+    padding-top: 5px;
+    text-align: left;
+    width: 140px;
+}
+.form-horizontal .controls {
+    margin-right: 160px;
+	margin-left:auto;
+}
+.form-horizontal .form-actions {
+    padding-right: 160px;
+}
+
+.thumbnails {
+    margin-right: 0;
+	margin-left:12px;
+	float:right;
+
+}
+.thumbnails > li {
+    float: right;
+    margin: 0 0 18px 0;
+    margin-left: 12px;
+}
+
+
+/* Pulls */
+.pull-left {
+    float: left !important;
+	margin:0px;
+}
+
+/* Pagination */
+.pagination ul{
+	 margin-left: auto;
+	  margin-right: 0;
+}
+.pagination ul > li{
+	float:right;
+}
+
+.pagination li:first-child a {
+    border-right-width: 1px;	
+	border-radius: 0 3px 3px 0;
+}
+.pagination a {
+    border-width: 1px 0 1px 1px;
+    float: right;
+}
+.pagination li:last-child a {
+	border-left-width: 1px;
+	border-radius: 3px 0 0 3px;
+}
+.table th, .table td{
+	text-align: right;
+}

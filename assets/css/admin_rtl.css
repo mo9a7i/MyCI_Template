@@ -1,0 +1,140 @@
+.nav{
+	margin-right:0px;
+}
+
+.navbar .nav {
+    float: right;
+    left: none !important;
+	right:0;
+    margin: 0 0 0 10px;
+}
+
+.navbar .nav > li {
+    float: right;
+}
+.nav-tabs > li, .nav-pills > li {
+    float: right;
+	font-family:tahoma;
+}
+.navbar .brand {
+    float: right;
+	margin-left: 0px;
+    margin-right: -20px;
+}
+.navbar-search
+{
+	margin-left:12px;
+}
+
+.dropdown .caret {
+    margin-left: 0px;
+	margin-right:8px;
+}
+.dropdown-menu
+{
+	left:auto;
+	right:0px;
+}
+.navbar .dropdown-menu:after{
+	left:auto;
+	right:10px;
+}
+.navbar .dropdown-menu:before{
+left:auto;
+	right:9px;
+}
+
+.row {
+    margin-left: auto;
+	margin-right:-30px;
+}
+.row-fluid  [class*="span"]:first-child {
+    margin-right: 0;
+}
+.row-fluid  [class*="span"]
+{
+float: right;
+	margin-left: 0;
+    margin-right: 2.5641%;
+}
+
+
+.radio input[type="radio"], .checkbox input[type="checkbox"] {
+    float: right;
+    margin-right: 0;
+	margin-left:6px;
+}
+
+.alert {
+    padding: 8px 14px 8px 35px;    
+}
+
+.alert .close {
+    left: -21px;
+	right:auto;
+    top: -2px;
+}
+.close {
+    float: left;
+}
+
+ul, ol {
+    margin: 0 25px 9px 0;
+}
+
+.form-horizontal .control-label {
+    float: right;
+    padding-top: 5px;
+    text-align: left;
+    width: 140px;
+}
+.form-horizontal .controls {
+    margin-right: 160px;
+	margin-left:auto;
+}
+.form-horizontal .form-actions {
+    padding-right: 160px;
+}
+
+.thumbnails {
+    margin-right: 0;
+	margin-left:12px;
+	float:right;
+
+}
+
+.thumbnails > li {
+    float: right;
+    margin: 0 0 18px 0;
+    margin-left: 12px;
+}
+
+.btn {
+	font-weight:bold;
+}
+.pagination ul{
+	 margin-left: auto;
+	  margin-right: 0;
+}
+
+.datepicker.dropdown-menu{
+	right:auto;
+	direction:ltr;
+}
+.pagination li:first-child a {
+    border-right-width: 1px;	
+	border-radius: 0 3px 3px 0;
+}
+
+.pagination a {
+    border-width: 1px 0 1px 1px;
+    float: right;
+}
+
+.pagination li:last-child a {
+	border-left-width: 1px;
+	border-radius: 3px 0 0 3px;
+}
+.table th, .table td{
+text-align: right;
+}
