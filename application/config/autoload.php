@@ -2,7 +2,7 @@
 
 $autoload['packages'] = array();
 
-$autoload['libraries'] = array('email','pagination','table','database','form_validation','session','template','ion_auth','user_agent','twitter');
+$autoload['libraries'] = array('email','pagination','table','database','form_validation','session','template','ion_auth','user_agent','twitter','Curl');
 
 $autoload['helper'] = array('date','cookie','url','form','file','download','directory','mo9a7i','ckeditor','text');
 
