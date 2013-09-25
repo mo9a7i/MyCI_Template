@@ -19,7 +19,7 @@ if (defined('ENVIRONMENT'))
 }
 
 
-	$system_path = 'codeigniter210/system';
+	$system_path = 'codeigniter214/system';
 
 	$application_folder = 'application';
 
