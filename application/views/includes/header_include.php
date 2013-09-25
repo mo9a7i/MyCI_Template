@@ -40,8 +40,10 @@
 	<!-- <link href="<?php echo asset_url(); ?>css/graphs.css" rel="stylesheet"> -->
 	<link href="<?php echo asset_url(); ?>css/jquery.Jcrop.css" rel="stylesheet">
 	<!--<link href="<?php echo asset_url(); ?>css/jquery.rating.css" rel="stylesheet">-->
-	<link href="<?php echo asset_url(); ?>css/bootstrap.css" rel="stylesheet">
-	<link href="<?php echo asset_url(); ?>css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="<?php echo asset_url(); ?>css/bootstrap.css" rel="stylesheet" media="screen">
+	
+	<!-- <link href="<?php echo asset_url(); ?>css/bootstrap-theme.css" rel="stylesheet" media="screen"> -->
+	
 	<link href="<?php echo asset_url(); ?>css/datepicker.css" rel="stylesheet">
 	<link href="<?php echo asset_url(); ?>css/rtl.css" rel="stylesheet">
 	<link href="<?php echo asset_url(); ?>css/style.css" rel="stylesheet">
@@ -49,6 +51,12 @@
 	<link href="<?php echo asset_url(); ?>css/bootstrap-editable.css" rel="stylesheet">
 	<link href="<?php echo asset_url(); ?>css/bootstro.css" rel="stylesheet">
 	<link href="<?php echo asset_url(); ?>css/print.css" rel="stylesheet" media="print">
+	
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
 	
 	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
 	<!--[if lt IE 9]>
