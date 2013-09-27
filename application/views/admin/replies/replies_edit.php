@@ -13,8 +13,8 @@
 <?php echo form_open_multipart(base_url().'admin/replies/submit',array('class'=>'form-horizontal')); ?>
 <fieldset>
 
-<div class="row-fluid">
-<div class="span12">
+<div class="row">
+<div class="col-md-12">
 <?php echo form_hidden('id', $records[0]->id); ?>
 <?php 	if($records[0]->user_id == 0):?>
 <?php text_box_item('الكاتب','author',$records[0]->author,'','input-block-level" disabled=disabled'); ?>
@@ -43,7 +43,7 @@
 <div class="clear">
 		<div class="form-actions">
             <?php echo form_submit(array('class'=>'btn btn-primary','value'=>'إرسال')); ?>
-            <?php echo form_reset(array('class'=>'btn','value'=>'إلغاء الأمر')); ?>
+            <?php echo form_reset(array('class'=>'btn btn-default','value'=>'إلغاء الأمر')); ?>
           </div>
 </div>
 </div>

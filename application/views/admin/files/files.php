@@ -15,7 +15,7 @@
 	<?php echo form_open_multipart('admin/files/jqueryUpload',array('id'=>'fileupload','class'=>'form-horizontal')); ?>
         <!-- The fileupload-buttonbar contains buttons to add/delete files and start/cancel the upload -->
         <div class=" fileupload-buttonbar">
-            <div class="span7">
+            <div class="col-md-7">
                 <!-- The fileinput-button span is used to style the file input field as button -->
                 <span class="btn btn-success fileinput-button">
                     <i class="icon-plus icon-white"></i>
@@ -37,7 +37,7 @@
                 <input type="checkbox" class="toggle">
             </div>
             <!-- The global progress information -->
-            <div class="span5 fileupload-progress fade">
+            <div class="col-md-5 fileupload-progress fade">
                 <!-- The global progress bar -->
                 <div class="progress progress-success progress-striped active">
                     <div class="bar" style="width:0%;"></div>
@@ -60,7 +60,7 @@
     </div>
     <div class="modal-body"><div class="modal-image"></div></div>
     <div class="modal-footer">
-        <a class="btn modal-download" target="_blank">
+        <a class="btn btn-default modal-download" target="_blank">
             <i class="icon-download"></i>
             <span>Download</span>
         </a>
@@ -103,7 +103,7 @@
 	<!-- Submit button -->
 	<div class="form-actions">
 		<?php echo form_submit(array('class'=>'btn btn-primary','value'=>'OK')); ?>
-		<?php echo form_reset(array('class'=>'btn','value'=>'Cancel')); ?>
+		<?php echo form_reset(array('class'=>'btn btn-default','value'=>'Cancel')); ?>
 	  </div>
 </fieldset><?php echo form_close(); ?>
 

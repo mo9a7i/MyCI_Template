@@ -14,7 +14,7 @@
 <div class="clear">
 	<div class="form-actions">
 		<a href="<?=base_url()?>admin/posts/confirm_delete/<?=$records[0]->id?>" class="btn btn-primary">نعم</a>
-		<a href="<?=base_url()?>admin/posts" class="btn">لا</a>
+		<a href="<?=base_url()?>admin/posts" class="btn btn-default">لا</a>
 	  </div>
 </div>
 </div>

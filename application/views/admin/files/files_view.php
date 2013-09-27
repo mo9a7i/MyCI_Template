@@ -9,7 +9,7 @@
 </ul>
 <?php echo form_open('admin/pages/submit',array('class'=>'form-horizontal')); ?>
 <fieldset>
-<div class="span10">
+<div class="col-md-10">
 <?php echo form_hidden('id', $records[0]->id); ?>
 <?php text_box_item('عنوان الخبر','title',$records[0]->title,''); ?>
 
@@ -18,7 +18,7 @@
 
 	<hr />
 </div>
-<div class="span6"> 	
+<div class="col-md-6"> 	
 <h2>معلومات إضافية</h2>	
 
 <div class="control-group">
@@ -51,7 +51,7 @@
 <div class="clear">
 		<div class="form-actions">
             <?php echo form_submit(array('class'=>'btn btn-primary','value'=>'إرسال')); ?>
-            <?php echo form_reset(array('class'=>'btn','value'=>'إلغاء الأمر')); ?>
+            <?php echo form_reset(array('class'=>'btn btn-default','value'=>'إلغاء الأمر')); ?>
           </div>
 </div>
 </fieldset>		

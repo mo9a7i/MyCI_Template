@@ -11,8 +11,8 @@
   <li><a href="<?=base_url()?>admin/pages/delete/<?=$records[0]->id?>"><i class="icon-remove"></i> حذف</a></li>
 </ul>
 <?php echo form_open('admin/pages/submit',array('class'=>'form-horizontal')); ?>
-<div class="row-fluid">
-<div class="span12">
+<div class="row">
+<div class="col-md-12">
 <?php echo form_hidden('id', $records[0]->id); ?>
 
 <?php text_box_item('عنوان الخبر','title',$records[0]->title,''); ?>
@@ -26,8 +26,8 @@
 	<hr />
 </div>
 </div>
-<div class="row-fluid">
-<div class="span12"> 	
+<div class="row">
+<div class="col-md-12"> 	
 <h2>معلومات إضافية</h2>	
 
 <div class="control-group">
@@ -48,7 +48,7 @@
 <div class="clear">
 		<div class="form-actions">
             <?php echo form_submit(array('class'=>'btn btn-primary','value'=>'إرسال')); ?>
-            <?php echo form_reset(array('class'=>'btn','value'=>'إلغاء الأمر')); ?>
+            <?php echo form_reset(array('class'=>'btn btn-default','value'=>'إلغاء الأمر')); ?>
           </div>
 </div>
 <?php echo form_close(); ?>

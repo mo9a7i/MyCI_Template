@@ -2,6 +2,8 @@
 
 <?php if($this->mo9a7i_model->show_welcome()):?>
 <div id="welcome" class="modal show ">
+	<div class="modal-dialog">
+		<div class="modal-content">
 	<div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 		<h3>مرحباً بك في فطسني.كوم</h3>
@@ -17,8 +19,10 @@
 		<p>إذا ودكم تعطونا ملاحظاتكم, جربوا و  <a href="contactus">إتصلوا بنا</a></p>
 	</div>
 	<div class="modal-footer">
-		<a href="<?=base_url();?>home/disable_welcome" class="btn">عدم الإظهار مرة أخرى</a>
+		<a href="<?=base_url();?>home/disable_welcome" class="btn btn-default">عدم الإظهار مرة أخرى</a>
 	</div>
+	</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
 </div>
 <?php endif;?>
 
@@ -26,9 +30,9 @@
 
 <div id="body">
 <div class="page-header">
-	<div class="row-fluid">
-		<div class="span6"><h1>آخر النكت</h1></div>
-		<div class="span6"><!--<a style="font-weight:bold;font-size:16px;" class="pull-left" href="#">إخفاء / إظهار الردود</a>--></div>
+	<div class="row">
+		<div class="col-md-6"><h1>آخر النكت</h1></div>
+		<div class="col-md-6"><!--<a style="font-weight:bold;font-size:16px;" class="pull-left" href="#">إخفاء / إظهار الردود</a>--></div>
 	</div>
 		
 </div>

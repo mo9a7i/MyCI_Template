@@ -6,7 +6,7 @@
 </ul>
 <?php echo form_open_multipart('admin/annoucements/submit',array('class'=>'form-horizontal')); ?>
 <fieldset>
-<div class="span10">
+<div class="col-md-0">
 
 <?php text_box_item('عنوان الإعلان','title','',''); ?>
 
@@ -16,7 +16,7 @@
 </div>
 
 
-<div class="span10"> 	
+<div class="col-md-10"> 	
 
 <h2>معلومات إضافية</h2>	
 <div class="control-group">
@@ -36,7 +36,7 @@
 <div class="clear">
 		<div class="form-actions">
             <?php echo form_submit(array('class'=>'btn btn-primary','value'=>'إرسال')); ?>
-            <?php echo form_reset(array('class'=>'btn','value'=>'إلغاء الأمر')); ?>
+            <?php echo form_reset(array('class'=>'btn btn-default','value'=>'إلغاء الأمر')); ?>
           </div>
 </div>
 </fieldset>		

@@ -3,9 +3,9 @@
 		<h1>تعديل الملف الشخصي</h1>
 		<p>قم بتعديل بياناتك الشخصية في هذه الصفحة, وتذكر أن تقوم بزيارتها للتحديث دورياً</p>
 	</div>
-	<div class="row-fluid">
+	<div class="row">
 		<?php echo form_open_multipart('users/edit_profile_submit',array('class'=>'form-horizontal')); ?>
-		<div class="span6">
+		<div class="col-md-6">
 		
 				
 				<h2>معلوماتك الرئيسية</h2>
@@ -25,7 +25,7 @@
 				?>
 				<?php date_box_item($label='تاريخ الميلاد',$name='date_of_birth',$id='date_of_birth',$records[0]->date_of_birth,$help='')?>	
 		</div>
-		<div class="span6">
+		<div class="col-md-6">
 				<h2>معلومات إضافية</h2>	
 				<?php text_box_item('رقم الجوال','phone_number',$records[0]->phone,''); ?>
 				<?php
@@ -48,7 +48,7 @@
 			<div class="clear">
 				<div class="form-actions">
 					<?php echo form_submit(array('class'=>'btn btn-primary','value'=>'إرسال')); ?>
-					<?php echo form_reset(array('class'=>'btn','value'=>'إلغاء الأمر')); ?>
+					<?php echo form_reset(array('class'=>'btn btn-default','value'=>'إلغاء الأمر')); ?>
 				  </div>
 			</div>
 		</div>

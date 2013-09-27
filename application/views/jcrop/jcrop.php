@@ -61,20 +61,20 @@
 			};
 		
 	</script>
-	<div class="row-fluid" dir="" id="jcrop_box">
-		<div class="span8">
+	<div class="row" dir="" id="jcrop_box">
+		<div class="col-md-8">
 			<div id="source_image">
 				<img src="<?=uploads_url().'images/'.$image->server_name;?>" alt="Source" id="source"  style="max-width:400px;max-height:400px;" />
 			</div>
 		</div>
-		<div class="span4">
+		<div class="col-md-4">
 			<ul class="thumbnails">
 				<li>
-					<div class="row-fluid">
-						<div dir="ltr" id="preview_image" class="span5" style="width:<?=$dimension;?>px;height:<?=$dimension;?>px;overflow:hidden;">
+					<div class="row">
+						<div dir="ltr" id="preview_image" class="col-md-5" style="width:<?=$dimension;?>px;height:<?=$dimension;?>px;overflow:hidden;">
 							<img src="<?=uploads_url().'images/'.$image->server_name;?>" id="preview" alt="Preview" class="jcrop-preview" />
 						</div>
-						<div class="span7">
+						<div class="col-md-7">
 							<h4>عرض تجريبي</h4>
 							<p>هكذا ستظهر الصورة عند عرضها مصغرة, عند الضغط على الصورة سيتم فتح الصورة الأصلية</p>
 						</div>
@@ -94,7 +94,7 @@
 	<!-- Submit button -->
 	<div class="form-actions">
 		<?php echo form_submit(array('class'=>'btn btn-primary','value'=>'OK')); ?>
-		<?php echo form_reset(array('class'=>'btn','value'=>'Cancel')); ?>
+		<?php echo form_reset(array('class'=>'btn btn-default','value'=>'Cancel')); ?>
 	  </div>
 </fieldset>
 

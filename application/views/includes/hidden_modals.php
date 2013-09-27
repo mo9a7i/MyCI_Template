@@ -1,6 +1,9 @@
 <!-- Welcome Message -->
 <?php if($this->mo9a7i_model->show_welcome()):?>
 <div id="welcome" class="modal show">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
 	<div class="modal-header">
 		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 		<h3>مرحباً بك في فطسني.كوم</h3>
@@ -17,8 +20,10 @@
 	</div>
 	<div class="modal-footer">
 		<a href="#" id="f6sny-tour" class="btn btn-primary">خذني بجولة</a>
-		<a href="<?=base_url();?>home/disable_welcome" class="btn">لاعاد اشوفك</a>
+		<a href="<?=base_url();?>home/disable_welcome" class="btn btn-default">لاعاد اشوفك</a>
 	</div>
+	    </div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
 </div>
 <?php endif;?>
 
@@ -30,13 +35,15 @@
 <!-- Modal -->
 <div id="addJoke" class="modal hide fade" style="width: 750px;margin-left: -375px;" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 <?php echo form_open(base_url().'ajax/submit_post',array('id'=>'JokeAdd','class'=>'form-horizontal')); ?>
+	<div class="modal-dialog">
+		<div class="modal-content">
   <div class="modal-header">
     <button type="button" class="close pull-left" data-dismiss="modal" aria-hidden="true"><i class=" icon-remove"></i></button>
 	<a href="#" class="close pull-left" data-original-title="إضغط عشان تشوف القوانين" data-placement="bottom" data-title="مساعدة" id="newJokeHelp"><i class=" icon-question-sign"></i></a>
     <h3 id="myModalLabel">تكفى تكفى سمعناها!</h3>
   </div>
 <div class="modal-body">
-	<div class="row-fluid hide" id="newJokeRules">
+	<div class="row hide" id="newJokeRules">
 		<div class="alert alert-warning" style="margin-bottom:0px;">
 			<ul class="ordered">
 				<li><strong>مبادئ لازم نعرفها كويس:</strong>
@@ -49,25 +56,25 @@
 			</ul>
 		</div>
 	</div>
-	<div class="row-fluid" id="addJokeMessages">
+	<div class="row" id="addJokeMessages">
 		<div id="failure_message" class="alert alert-error hide"></div>
 		<div id="success_message" class="alert alert-success hide"></div>
 		<div id="loading" class="text-center"><i class="icon-spinner icon-spin icon-2x hide"></i></div>
 	</div>
-	<div class="row-fluid" id="textArea">
+	<div class="row" id="textArea">
 		
-		<div class="row-fluid" id="authorWillBe">
+		<div class="row" id="authorWillBe">
 		<span class="help-block pull-left">سيتم نشر النكتة بإسم: <?=(($this->mo9a7i_model->get_user_id() ==0)? '<span class="text-warning">زائر</span>' : '<span class="text-success">'.$this->ion_auth->user()->row()->username.'</span>');?></span>
 		</div>
-		<div class="row-fluid">
+		<div class="row">
 		<textarea id="joke_area" name="content" placeholder="يقول لك, " rows="5" class="input-block-level">يقول لك, </textarea>
 		</div>
 	</div>
 	
-	<div class="row-fluid" id="tags">
+	<div class="row" id="tags">
 		<h4>التصنيفات</h4>
 		<div class="">
-			<ul id="Tagsaty" class="inline">
+			<ul id="Tagsaty" class="list-inline">
 				<?php
 				foreach($menu_tags as $tag)
 				{
@@ -83,13 +90,18 @@
   
 <div class="modal-footer">
 	<input type="submit" class="btn btn-primary" value="أرررسل" />
-	<button class="btn" data-dismiss="modal" aria-hidden="true">لالالا إستحيت</button>
+	<button class="btn btn-default" data-dismiss="modal" aria-hidden="true">لالالا إستحيت</button>
 </div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
 <?php echo form_close(); ?>	
+
 </div>
 
 <!-- +18 filter popup -->
 <div id="filter_popup" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="filterPopupLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
     <h3 id="filterPopupLabel">أنت الآن تحاول تطفي الوضع الآمن!</h3>
@@ -107,7 +119,9 @@
   </div>
   <div class="modal-footer">
     <a class="btn btn-primary" href="<?=base_url();?>home/disable_filter">تمام</a>
-	<button class="btn" data-dismiss="modal" aria-hidden="true">لا ياعمي!</button>
+	<button class="btn btn-default" data-dismiss="modal" aria-hidden="true">لا ياعمي!</button>
 
   </div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
 </div>

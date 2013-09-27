@@ -62,19 +62,19 @@ if (!$this->ion_auth->is_admin())
   <body>
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container-fluid">
-		<div class="row-fluid">
-		<div class="span3">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <div class="container">
+		<div class="row">
+		<div class="col-md-3">
+          <a class="btn navbar-btn" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-			<a class="brand" href="<?php echo base_url(); ?>"><?php echo $this->Settings->site_title; ?></a>
+			<a class="navbar-brand" href="<?php echo base_url(); ?>"><?php echo $this->Settings->site_title; ?></a>
           
 		  </div>
-		  <div class="span9">
-          <div class="nav-collapse">
+		  <div class="col-md-9">
+          <div class="navbar-collapse">
             <ul class="nav">
              
 
@@ -86,17 +86,17 @@ if (!$this->ion_auth->is_admin())
 				</ul>
 				</li>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div><!--/.navbar-collapse -->
 		  </div>
 		  </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid">
-      <div class="row-fluid">
-	   <div class="span3">
+    <div class="container">
+      <div class="row">
+	   <div class="col-md-3">
           <?php $this->load->view('admin/includes/sidebar'); ?>
         </div><!--/span-->
-        <div class="span9">
+        <div class="col-md-9">
 		<?php $this->load->view('admin/includes/informational_messages'); ?>

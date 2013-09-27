@@ -12,7 +12,7 @@
 </ul>
 <?php echo form_open_multipart('admin/users/submit',array('class'=>'form-horizontal')); ?>
 <fieldset>
-<div class="span5">
+<div class="col-md-5">
 <div>
 <h2>معلومات رئيسية</h2>
 
@@ -40,7 +40,7 @@ radio_item('الوضع الآمن','adult_content',$options,'الوضع الآم
 </div>
 </div>
 
-<div class="span4">
+<div class="col-md-4">
 
 <h2>معلومات إضافية</h2>	
 <?php text_box_item('الإسم الأول','first_name','',''); ?>
@@ -70,7 +70,7 @@ radio_item('عرض البلاك بيري للزوار','show_bb_pin',$options,'�
 <div class="clear">
 	<div class="form-actions">
 		<?php echo form_submit(array('class'=>'btn btn-primary','value'=>'إرسال')); ?>
-		<?php echo form_reset(array('class'=>'btn','value'=>'إلغاء الأمر')); ?>
+		<?php echo form_reset(array('class'=>'btn btn-default','value'=>'إلغاء الأمر')); ?>
 	</div>
 </div>
 </fieldset>		

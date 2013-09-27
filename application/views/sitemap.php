@@ -3,10 +3,10 @@
 		<h1><?=$title;?></h1>	
 	</div>
 	
-	<div id="site_tags" class="row-fluid">
-			<div class="span12">
+	<div id="site_tags" class="row">
+			<div class="col-md-12">
 			<h3>أقسام الموقع</h3>
-			<ul class="unstyled">
+			<ul class="list-unstyled">
 			<?php 
 			foreach($this->tags as $tag): ?>
 			<li><strong><a href="<?php echo base_url(); ?>tag/<?=urlencode($tag->slug)?>"><?=$tag->title?></a></strong>(<?=$tag->count?>) <?=$tag->description?></li>
@@ -16,8 +16,8 @@
 			</div>
 	</div>
 	
-	<div id="last_jokes" class="row-fluid">
-			<div class="span12">
+	<div id="last_jokes" class="row">
+			<div class="col-md-12">
 			<h3>آخر النكت</h3>
 			<ol>
 			<?php foreach($jokes as $joke): ?>
@@ -29,8 +29,8 @@
 			</div>
 	</div>
 	
-	<div id="last_comments" class="row-fluid">
-			<div class="span12">
+	<div id="last_comments" class="row">
+			<div class="col-md-12">
 			<h3>آخر التعليقات</h3>
 			<ol>
 			<?php foreach($comments as $comment): ?>

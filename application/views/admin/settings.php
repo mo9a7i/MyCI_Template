@@ -4,8 +4,8 @@
 	</div>
 	<?php echo form_open('admin/settings/submit',array('class'=>'form-horizontal')); ?>
 	<fieldset>
-	<div class="row-fluid">
-		<div class="span6">
+	<div class="row">
+		<div class="col-md-6">
 			<h2>خيارات عامة</h2>
 			<?php
 			$options = array(array('label' => 'مفعل','value' => '1'),array('label' => 'معطل','value' => '0'));
@@ -25,7 +25,7 @@
 			?>
 
 		</div>
-		<div class="span6">
+		<div class="col-md-6">
 			<h2>خيارات مخصصة</h2>
 			<?php
 			$options = array(array('label' => 'مفعل','value' => '1'),array('label' => 'معطل','value' => '0'));
@@ -44,11 +44,11 @@
 			 ?>
 		</div>
 	</div>
-	<div class="row-fluid">
+	<div class="row">
 		<div class="form-actions">
 			<?php 
 			echo form_submit(array('class'=>'btn btn-primary','value'=>'إرسال')); 
-			echo form_reset(array('class'=>'btn','value'=>'إلغاء الأمر')); 
+			echo form_reset(array('class'=>'btn btn-default','value'=>'إلغاء الأمر')); 
 			?>
 		</div>
 	</div>

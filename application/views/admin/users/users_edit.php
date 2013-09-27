@@ -25,9 +25,9 @@ if($records[0]->active == 4):
 <?php
 endif;
 ?>
-<div class="row-fluid">
+<div class="row">
 <?php echo form_open_multipart('admin/users/submit',array('class'=>'form-horizontal')); ?>
-<div class="span6">
+<div class="col-md-6">
 <div>
 <h2>معلومات رئيسية</h2>
 <?php echo form_hidden('id', $records[0]->id); ?>
@@ -51,7 +51,7 @@ radio_item('الوضع الآمن','adult_content',$options,'الوضع الآم
 
 </div>
 </div>
-<div class="span5">
+<div class="col-md-5">
 <h2>معلومات إضافية</h2>	
 
 <?php text_box_item('الإسم الأول','first_name',$records[0]->first_name,''); ?>
@@ -79,7 +79,7 @@ radio_item('عرض البلاك بيري للزوار','show_bb_pin',$options,'�
 <div class="clear">
 	<div class="form-actions">
 		<?php echo form_submit(array('class'=>'btn btn-primary','value'=>'إرسال')); ?>
-		<?php echo form_reset(array('class'=>'btn','value'=>'إلغاء الأمر')); ?>
+		<?php echo form_reset(array('class'=>'btn btn-default','value'=>'إلغاء الأمر')); ?>
 	</div>
 </div>	
 <?php echo form_close(); ?>

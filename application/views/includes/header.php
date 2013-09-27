@@ -21,17 +21,17 @@ if (isset($_SERVER['HTTP_USER_AGENT'])  AND (strpos($_SERVER['HTTP_USER_AGENT'],
 <body>
 <!-- Breaking News --><?php // breaking_news(); ?><!-- Breaking News -->
 <div class="container main">
-	<header class="row-fluid">
+	<header class="row">
 		<div class="rainbow">
 		</div>
 		<?php $this->load->view('includes/login_bar'); ?>
 		<?php $this->load->view('includes/reports'); ?>
 		<div id="header-content">
-			<div id="titleBar" class="row-fluid">
-				<div class="span4">
+			<div id="titleBar" class="row">
+				<div class="col-md-4">
 					<h1><a href="<?php echo base_url(); ?>" title="<?php echo $this->Settings->site_description; ?>"><img src="<?php echo base_url().'assets/img/f6snylogo.png'; ?>" alt="<?php echo $this->Settings->site_title; ?>" /></a></h1>
 				</div>
-				<div class="span8">
+				<div class="col-md-8">
 					<div id="headerBanner" class="pull-left">
 						<script type="text/javascript"><!--
 						google_ad_client = "ca-pub-8882866984702449";
@@ -51,6 +51,6 @@ if (isset($_SERVER['HTTP_USER_AGENT'])  AND (strpos($_SERVER['HTTP_USER_AGENT'],
 			<?php $this->load->view('includes/informational_messages'); ?>
 		</div>
 	</header>
-	<div class="row-fluid">
-		<div class="span9 add_shadow">
+	<div class="row">
+		<div class="col-md-9 add_shadow">
 		<section>

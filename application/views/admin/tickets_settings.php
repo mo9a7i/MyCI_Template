@@ -18,7 +18,7 @@ radio_item('وضع الصيانة','maintenance',$options,'عند تفعيل و�
 
 		<div class="form-actions">
             <?php echo form_submit(array('class'=>'btn btn-primary','value'=>'إرسال')); ?>
-            <?php echo form_reset(array('class'=>'btn','value'=>'إلغاء الأمر')); ?>
+            <?php echo form_reset(array('class'=>'btn btn-default','value'=>'إلغاء الأمر')); ?>
           </div>
 
 </fieldset>		

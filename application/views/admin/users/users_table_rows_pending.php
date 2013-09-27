@@ -8,7 +8,7 @@
 		<td><?=$record->created_on;?></td>
 		<td><?=$record->group_name;?></td>
 		<td>
-			<ul class="user_controls inline unstyled">
+			<ul class="user_controls list-inline list-unstyled">
 				<li  id="activate_<?=$record->id;?>" data-original-title="Activate" rel="tooltip" class="icon edit_member_link ">
 					<a href="<?=base_url().'admin/users/activate/'.$record->id;?>">
 						تفعيل

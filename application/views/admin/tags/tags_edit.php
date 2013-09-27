@@ -2,9 +2,9 @@
 <div id="body">
 <p>في هذه الصفحة, استعرض تصنيفات الأخبار أو قم بإضافتها, التعديل عليهم أو مسحهم</p>
 
-<div class="row-fluid">
+<div class="row">
 
-<div class="span6">
+<div class="col-md-6">
 <h2>تعديل قسم</h2>
 <?php echo form_open(base_url().'admin/tags/submit',array('class'=>'form-horizontal')); ?><fieldset>
 <?php echo form_hidden('id', $records[0]->id); ?>
@@ -18,12 +18,12 @@
 	<!-- Submit button -->
 	<div class="form-actions">
 		<?php echo form_submit(array('class'=>'btn btn-primary','value'=>'OK')); ?>
-		<?php echo form_reset(array('class'=>'btn','value'=>'Cancel')); ?>
+		<?php echo form_reset(array('class'=>'btn btn-default','value'=>'Cancel')); ?>
 	  </div>
 </fieldset><?php echo form_close(); ?>
 </div>
 
-<div class="span6">
+<div class="col-md-6">
 
 <h2>قائمة الأقسام</h2>
 <table class="table table-condensed table-striped">

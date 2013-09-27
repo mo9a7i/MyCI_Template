@@ -8,7 +8,7 @@
 		<td><?=$record->date_added;?></td>
 		<td><?=$record->replies;?></td>
 		<td>
-			<ul class="user_controls inline unstyled">
+			<ul class="user_controls list-inline list-unstyled">
 				<li  id="update_<?=$record->id;?>" data-original-title="Edit" rel="tooltip" class="icon edit_member_link ">
 					<a href="<?=base_url().'admin/contactus/view/'.$record->id;?>">
 						<i class="icon-pencil"></i><span style="display:none">зяж</span>

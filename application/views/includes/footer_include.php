@@ -68,9 +68,9 @@
 		$("#f6sny-tour").click(function(){
 			$('#welcome').modal('toggle');
 			var options = {
-				nextButton: '<button class="btn btn-primary btn-mini bootstro-next-btn">وش بعد؟</button>',
-				prevButton: '<button class="btn btn-primary btn-mini bootstro-prev-btn">إرجع!</button>',
-				finishButton: '<button class="btn btn-mini btn-success bootstro-finish-btn"><i class="icon-ok" ></i> خلاص خلاص فهمت!</button>'
+				nextButton: '<button class="btn btn-primary btn-xs bootstro-next-btn">وش بعد؟</button>',
+				prevButton: '<button class="btn btn-primary btn-xs bootstro-prev-btn">إرجع!</button>',
+				finishButton: '<button class="btn btn-xs btn-success bootstro-finish-btn"><i class="icon-ok" ></i> خلاص خلاص فهمت!</button>'
 
 			};
 			bootstro.start('.bootstro',options);

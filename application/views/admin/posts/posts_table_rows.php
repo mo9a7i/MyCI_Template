@@ -9,7 +9,7 @@
 		<td><?=anchor(base_url().'admin/users/edit/'.$record->user_id,(empty($record->username) ? $record->user_id:$record->username));?></td>
 		<td><?=$record->date_added;?></td>
 		<td>
-			<ul class="user_controls inline unstyled">
+			<ul class="user_controls list-inline list-unstyled">
 				<li  id="update_<?=$record->id;?>" data-original-title="Edit" rel="tooltip" class="icon edit_member_link ">
 					<a href="<?=base_url().'admin/posts/edit/'.$record->id;?>">
 						<i class="icon-pencil"></i><span style="display:none">ΚΪΟνα</span>

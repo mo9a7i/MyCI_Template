@@ -4,11 +4,11 @@
 
 <div id="body">
 	<div class="page-header">
-		<div class="row-fluid">
-			<div class="span2" style="width:100px;">
+		<div class="row">
+			<div class="col-md-2" style="width:100px;">
 				<?php show_thumb(@$image[0]->server_name); ?>
 			</div>
-			<div dir="rtl" class="span9">
+			<div dir="rtl" class="col-md-9">
 				<h1 dir="rtl"><?=$fullname; if(!empty($user[0]->username)):?> <em dir=rtl><small>(<?=$user[0]->username;?>)</small></em><?php endif;?></h1>
 			<?php if(!empty($user[0]->bio)) : ?>
 				<p id="biography"><?=$user[0]->bio;?></p>
@@ -16,11 +16,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="row-fluid">
-		<div class="row-fluid">
-			<div class="span12">
+	<div class="row">
+		<div class="row">
+			<div class="col-md-12">
 			<h3>معلومات عامة</h3>
-				<ul class="userinfo unstyled">
+				<ul class="userinfo list-unstyled">
 					<li><strong>الدولة:</strong><?=$user[0]->country_name;?></li>
 					<li><strong>تاريخ الميلاد:</strong><time><?=mdate("%d / %m / %Y", mysql_to_unix($user[0]->date_of_birth))?></time></li>
 					<li><strong>الجنس:</strong><?=(($user[0]->gender) ? "ذكر" : "أنثى");?></li>
@@ -40,8 +40,8 @@
 				</ul>
 			</div>
 		</div>
-		<div id="user_jokes" class="row-fluid">
-			<div class="span12">
+		<div id="user_jokes" class="row">
+			<div class="col-md-12">
 			<h3>آخر النكت</h3>
 			<ol>
 			<?php foreach($jokes as $joke): ?>
@@ -54,8 +54,8 @@
 			
 			</div>
 		</div>
-		<div id="user_comments" class="row-fluid">
-			<div class="span12">
+		<div id="user_comments" class="row">
+			<div class="col-md-12">
 			<h3>آخر التعليقات</h3>
 			<ol>
 			<?php foreach($comments as $comment): ?>

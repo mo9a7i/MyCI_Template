@@ -42,7 +42,7 @@
 	<!-- Submit button -->
 	<div class="form-actions">
 		<?php echo form_submit(array('class'=>'btn btn-primary','value'=>'OK')); ?>
-		<?php echo form_reset(array('class'=>'btn','value'=>'Cancel')); ?>
+		<?php echo form_reset(array('class'=>'btn btn-default','value'=>'Cancel')); ?>
 	  </div>
 </fieldset><?php echo form_close(); ?>
 

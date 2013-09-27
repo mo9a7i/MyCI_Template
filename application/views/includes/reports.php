@@ -1,18 +1,20 @@
 <div style="" id="report" class="modal hide fade">
-	<div id="report-form" class="row-fluid">
+<div class="modal-dialog">
+    <div class="modal-content">
+	<div id="report-form" class="row">
 	<?php echo form_open(base_url().'ajax/submit_report',array('id'=>'reportForm','class'=>'form-horizontal')); ?>
 		<div class="modal-header">
 			<a class="close" data-dismiss="modal">×</a>
 			<h3>شكراً لإهتمامك بتبليغنا!</h3>
 		</div>
 		<div class="modal-body">
-			<div id="report-message" class="row-fluid" style="display:none;">
+			<div id="report-message" class="row" style="display:none;">
 				<div class="alert alert-success" >
 				شكراً لتبليغك, سيتم الإهتمام ببلاغك قريباً
 				</div>
 			</div>
-			<div class="row-fluid">
-				<div id="myreport" class="span6">
+			<div class="row">
+				<div id="myreport" class="col-md-6">
 					<fieldset>
 						<div class="control-group">
 						<?php 
@@ -27,7 +29,7 @@
 						<input type="hidden"  name="report_resource_type" id="report_resource_type">
 					</fieldset>
 				</div>
-				<div class="span5 information">
+				<div class="col-md-5 information">
 					<strong>بلاغ عن محتوى</strong>
 					<p>إستخدم خاصية التبليغ, للإبلاغ عن محتوى مسيء أو خاطئ. شاكرين لكم إهتمامكم بالموقع</p>
 				</div>	
@@ -38,4 +40,6 @@
 		</div>
 		<?php echo form_close(); ?>	
 	</div>
+	</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
 </div>
