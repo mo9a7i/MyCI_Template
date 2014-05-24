@@ -3,7 +3,7 @@
 ## What is this?
 
 This is my personal kick-start (in Arabic) template that is built around the following:
-* __Twitter Bootstrap:__
+* __Twitter Bootstrap:__	3.1.1
 	1.	FontAwsome	4.1
 	2.	x-editible
 	3.	Datepicker
