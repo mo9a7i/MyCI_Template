@@ -72,7 +72,7 @@ class Twitter {
     
     /* Properties for the cURL - used when decoding the response */
     protected $_arrProperties = array(
-        'code' => CURLINFO_HTTP_CODE,
+        'code' => CURLINFO_HTTP_code,
         'time' => CURLINFO_TOTAL_TIME,
         'length' => CURLINFO_CONTENT_LENGTH_DOWNLOAD,
         'type' => CURLINFO_CONTENT_TYPE,

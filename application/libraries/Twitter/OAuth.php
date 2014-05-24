@@ -845,7 +845,7 @@ class OAuthUtil {
   public static function build_http_query($params) {
     if (!$params) return '';
 
-    // Urlencode both keys and values
+    // urlencode both keys and values
     $keys = OAuthUtil::urlencode_rfc3986(array_keys($params));
     $values = OAuthUtil::urlencode_rfc3986(array_values($params));
     $params = array_combine($keys, $values);
