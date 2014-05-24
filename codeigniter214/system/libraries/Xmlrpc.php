@@ -1,10 +1,10 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * codeIgniter
+ * CodeIgniter
  *
  * An open source application development framework for PHP 5.1.6 or newer
  *
- * @package		codeIgniter
+ * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
  * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
@@ -24,7 +24,7 @@ if ( ! function_exists('xml_parser_create'))
 /**
  * XML-RPC request handler class
  *
- * @package		codeIgniter
+ * @package		CodeIgniter
  * @subpackage	Libraries
  * @category	XML-RPC
  * @author		ExpressionEngine Dev Team
@@ -49,7 +49,7 @@ class CI_Xmlrpc {
 	var $xmlrpcstr		= array();  // Response strings
 
 	var $xmlrpc_defencoding = 'UTF-8';
-	var $xmlrpcName			= 'XML-RPC for codeIgniter';
+	var $xmlrpcName			= 'XML-RPC for CodeIgniter';
 	var $xmlrpcVersion		= '1.1';
 	var $xmlrpcerruser		= 800; // Start of user errors
 	var $xmlrpcerrxml		= 100; // Start of XML Parse errors
@@ -456,7 +456,7 @@ class XML_RPC_Response
 		}
 	}
 
-	function faultcode()
+	function faultCode()
 	{
 		return $this->errno;
 	}
@@ -480,7 +480,7 @@ class XML_RPC_Response
 	<value>
 		<struct>
 			<member>
-				<name>faultcode</name>
+				<name>faultCode</name>
 				<value><int>' . $this->errno . '</int></value>
 			</member>
 			<member>
@@ -804,7 +804,7 @@ class XML_RPC_Message extends CI_Xmlrpc
 
 		if ($this->xh[$parser]['isf'])
 		{
-			$errno_v = $v->me['struct']['faultcode'];
+			$errno_v = $v->me['struct']['faultCode'];
 			$errstr_v = $v->me['struct']['faultString'];
 			$errno = $errno_v->scalarval();
 

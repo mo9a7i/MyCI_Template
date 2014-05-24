@@ -1,10 +1,10 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * codeIgniter
+ * CodeIgniter
  *
  * An open source application development framework for PHP 5.1.6 or newer
  *
- * @package		codeIgniter
+ * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
  * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
@@ -20,7 +20,7 @@
  *
  * Loads the base classes and executes the request.
  *
- * @package		codeIgniter
+ * @package		CodeIgniter
  * @subpackage	codeigniter
  * @category	Common Functions
  * @author		ExpressionEngine Dev Team
@@ -454,7 +454,7 @@ if ( ! function_exists('set_status_header'))
 * Exception Handler
 *
 * This is the custom exception handler that is declaired at the top
-* of codeigniter.php.  The main reason we use this is to permit
+* of Codeigniter.php.  The main reason we use this is to permit
 * PHP errors to be logged in our own log files since the user may
 * not have access to server logs. Since this function
 * effectively intercepts PHP errors, however, we also need

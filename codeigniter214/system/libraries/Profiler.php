@@ -1,10 +1,10 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * codeIgniter
+ * CodeIgniter
  *
  * An open source application development framework for PHP 5.1.6 or newer
  *
- * @package		codeIgniter
+ * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
  * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
@@ -16,7 +16,7 @@
 // ------------------------------------------------------------------------
 
 /**
- * codeIgniter Profiler Class
+ * CodeIgniter Profiler Class
  *
  * This class enables you to display benchmark, query, and other data
  * in order to help with debugging and optimization.
@@ -24,7 +24,7 @@
  * Note: At some point it would be good to move all the HTML in this class
  * into a set of template files in order to allow customization.
  *
- * @package		codeIgniter
+ * @package		CodeIgniter
  * @subpackage	Libraries
  * @category	Libraries
  * @author		ExpressionEngine Dev Team

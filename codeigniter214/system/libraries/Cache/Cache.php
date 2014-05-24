@@ -1,10 +1,10 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * codeIgniter
+ * CodeIgniter
  *
  * An open source application development framework for PHP 4.3.2 or newer
  *
- * @package		codeIgniter
+ * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
  * @copyright	Copyright (c) 2006 - 2012 EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
@@ -16,9 +16,9 @@
 // ------------------------------------------------------------------------
 
 /**
- * codeIgniter Caching Class 
+ * CodeIgniter Caching Class 
  *
- * @package		codeIgniter
+ * @package		CodeIgniter
  * @subpackage	Libraries
  * @category	Core
  * @author		ExpressionEngine Dev Team

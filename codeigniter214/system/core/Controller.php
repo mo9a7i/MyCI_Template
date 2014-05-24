@@ -1,10 +1,10 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * codeIgniter
+ * CodeIgniter
  *
  * An open source application development framework for PHP 5.1.6 or newer
  *
- * @package		codeIgniter
+ * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
  * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
@@ -16,12 +16,12 @@
 // ------------------------------------------------------------------------
 
 /**
- * codeIgniter Application Controller Class
+ * CodeIgniter Application Controller Class
  *
  * This class object is the super class that every library in
- * codeIgniter will be assigned to.
+ * CodeIgniter will be assigned to.
  *
- * @package		codeIgniter
+ * @package		CodeIgniter
  * @subpackage	Libraries
  * @category	Libraries
  * @author		ExpressionEngine Dev Team
@@ -39,7 +39,7 @@ class CI_Controller {
 		self::$instance =& $this;
 		
 		// Assign all the class objects that were instantiated by the
-		// bootstrap file (codeIgniter.php) to local class variables
+		// bootstrap file (CodeIgniter.php) to local class variables
 		// so that CI can run as one big super object.
 		foreach (is_loaded() as $var => $class)
 		{

@@ -1,10 +1,10 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 /**
- * codeIgniter
+ * CodeIgniter
  *
  * An open source application development framework for PHP 5.1.6 or newer
  *
- * @package		codeIgniter
+ * @package		CodeIgniter
  * @author		EllisLab Dev Team
  * @copyright	Copyright (c) 2006 - 2012, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
@@ -21,7 +21,7 @@
  * All migrations should implement this, forces up() and down() and gives
  * access to the CI super-global.
  *
- * @package		codeIgniter
+ * @package		CodeIgniter
  * @subpackage	Libraries
  * @category	Libraries
  * @author		Reactor Engineers

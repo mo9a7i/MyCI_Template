@@ -1,10 +1,10 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * codeIgniter
+ * CodeIgniter
  *
  * An open source application development framework for PHP 5.1.6 or newer
  *
- * @package		codeIgniter
+ * @package		CodeIgniter
  * @author		EllisLab Dev Team
  * @copyright	Copyright (c) 2006 - 2012, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
@@ -16,12 +16,12 @@
 // ------------------------------------------------------------------------
 
 /**
- * codeIgniter Driver Library Class
+ * CodeIgniter Driver Library Class
  *
  * This class enables you to create "Driver" libraries that add runtime ability
  * to extend the capabilities of a class via additional driver objects
  *
- * @package		codeIgniter
+ * @package		CodeIgniter
  * @subpackage	Libraries
  * @category	Libraries
  * @author		EllisLab Dev Team
@@ -95,12 +95,12 @@ class CI_Driver_Library {
 
 
 /**
- * codeIgniter Driver Class
+ * CodeIgniter Driver Class
  *
  * This class enables you to create drivers for a Library based on the Driver Library.
  * It handles the drivers' access to the parent library
  *
- * @package		codeIgniter
+ * @package		CodeIgniter
  * @subpackage	Libraries
  * @category	Libraries
  * @author		EllisLab Dev Team

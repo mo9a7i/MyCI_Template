@@ -1,10 +1,10 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * codeIgniter
+ * CodeIgniter
  *
  * An open source application development framework for PHP 5.1.6 or newer
  *
- * @package		codeIgniter
+ * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
  * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
@@ -16,11 +16,11 @@
 // ------------------------------------------------------------------------
 
 /**
- * codeIgniter Email Class
+ * CodeIgniter Email Class
  *
  * Permits email to be sent using Mail, Sendmail, or SMTP.
  *
- * @package		codeIgniter
+ * @package		CodeIgniter
  * @subpackage	Libraries
  * @category	Libraries
  * @author		ExpressionEngine Dev Team
@@ -28,7 +28,7 @@
  */
 class CI_Email {
 
-	var	$useragent		= "codeIgniter";
+	var	$useragent		= "CodeIgniter";
 	var	$mailpath		= "/usr/sbin/sendmail";	// Sendmail path
 	var	$protocol		= "mail";	// mail/sendmail/smtp
 	var	$smtp_host		= "";		// SMTP Server.  Example: mail.earthlink.net

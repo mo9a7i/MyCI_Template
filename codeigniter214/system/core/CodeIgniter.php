@@ -1,10 +1,10 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * codeIgniter
+ * CodeIgniter
  *
  * An open source application development framework for PHP 5.1.6 or newer
  *
- * @package		codeIgniter
+ * @package		CodeIgniter
  * @author		ExpressionEngine Dev Team
  * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
@@ -20,7 +20,7 @@
  *
  * Loads the base classes and executes the request.
  *
- * @package		codeIgniter
+ * @package		CodeIgniter
  * @subpackage	codeigniter
  * @category	Front-controller
  * @author		ExpressionEngine Dev Team
@@ -28,7 +28,7 @@
  */
 
 /**
- * codeIgniter Version
+ * CodeIgniter Version
  *
  * @var string
  *
@@ -36,7 +36,7 @@
 	define('CI_VERSION', '2.1.4');
 
 /**
- * codeIgniter Branch (Core = TRUE, Reactor = FALSE)
+ * CodeIgniter Branch (Core = TRUE, Reactor = FALSE)
  *
  * @var boolean
  *
@@ -398,5 +398,5 @@
 	}
 
 
-/* End of file codeIgniter.php */
-/* Location: ./system/core/codeIgniter.php */
+/* End of file CodeIgniter.php */
+/* Location: ./system/core/CodeIgniter.php */
