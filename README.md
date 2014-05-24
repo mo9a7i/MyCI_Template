@@ -4,7 +4,7 @@
 
 This is my personal kick-start (in Arabic) template that is built around the following:
 * __Twitter Bootstrap:__
-	1.	FontAwsome
+	1.	FontAwsome	4.1
 	2.	x-editible
 	3.	Datepicker
 	4.	Bootstro
