@@ -5,7 +5,7 @@ $config["useDatabaseConfig"] = true;
 $config['asset_path'] = 'assets/';
 $config['uploads_path'] = 'uploads/';
 
-$config['base_url']	= 'http://127.0.0.1/MyCI_Template';
+$config['base_url']	= 'http://Mo9a7i-PC/MyCI_Template';
 
 $config['index_page'] = '';
 

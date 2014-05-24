@@ -3,7 +3,7 @@
 /**
 * F6sny.com 
 * ===========
-* Coded by: 	Mohannad Otaibi
+* code
 * Email: 		mohannad.otaibi@gmail.com
 * Website:		http://www.mohannadotaibi.com
 * Date:			3/20/2012 *My 26th Birthday
@@ -31,7 +31,6 @@ if (!function_exists('print_keywords'))
 {
 	function print_keywords($keywords)
 	{
-		//$keywords = (array)$keywords;
 		if(!empty($keywords))
 		{
 			$tags = "";
@@ -185,10 +184,10 @@ if (!function_exists('dropdown_item'))
 	function dropdown_item($label='',$name='',$db='',$blank=TRUE,$value='',$help='')
 	{
 		$CI =& get_instance();
-		$options = $CI->mo9a7i_model->get_categories_dropdown($db);
+		$options = $CI->mo9->get_categories_dropdown($db);
 		if($blank)
 		{
-			$options = $CI->mo9a7i_model->add_blank_option($options,' ');
+			$options = $CI->mo9->add_blank_option($options,' ');
 		}
 		?>
 			<div class="control-group">
@@ -337,17 +336,17 @@ if (!function_exists('vote_box'))
 		?>
 		<!--<div class="votebox pull-left">-->
 			<?php
-				if($CI->mo9a7i_model->user_voted($CI->mo9a7i_model->get_user_id(),$resource_id,$resource_type)):
+				if($CI->mo9->user_voted($CI->mo9->get_user_id(),$resource_id,$resource_type)):
 					?>
-					<li class="upvote"><?php echo $CI->mo9a7i_model->get_votes($resource_id,$resource_type,'1');?></li>
-					<li class="downvote"><?php echo $CI->mo9a7i_model->get_votes($resource_id,$resource_type,'-1');?></li>
+					<li class="upvote"><?php echo $CI->mo9->get_votes($resource_id,$resource_type,'1');?></li>
+					<li class="downvote"><?php echo $CI->mo9->get_votes($resource_id,$resource_type,'-1');?></li>
 					<li><a  data-toggle="modal" href="#report" class="reportme" title="تبليغ" resource-type="<?=$resource_type;?>" resource-id="<?=$resource_id;?>"><i class="icon-bullhorn"></i></a>
 					</li>
 					<?php
 				else:
 					?>
-					<li><a title="<?php echo $CI->mo9a7i_model->get_votes($resource_id,$resource_type,'1');?>"><i resource-type="<?=$resource_type;?>" resource-id="<?=$resource_id;?>" vote-value="upvote" class="icon-thumbs-up vote"></i></a></li>
-					<li><a title="<?php echo $CI->mo9a7i_model->get_votes($resource_id,$resource_type,'-1');?>"><i resource-type="<?=$resource_type;?>" resource-id="<?=$resource_id;?>" vote-value="downvote" class="icon-thumbs-down vote"></i></a></li>
+					<li><a title="<?php echo $CI->mo9->get_votes($resource_id,$resource_type,'1');?>"><i resource-type="<?=$resource_type;?>" resource-id="<?=$resource_id;?>" vote-value="upvote" class="icon-thumbs-up vote"></i></a></li>
+					<li><a title="<?php echo $CI->mo9->get_votes($resource_id,$resource_type,'-1');?>"><i resource-type="<?=$resource_type;?>" resource-id="<?=$resource_id;?>" vote-value="downvote" class="icon-thumbs-down vote"></i></a></li>
 					<li><a><i  data-toggle="modal" href="#report" class="reportme icon-bullhorn" title="تبليغ" resource-type="<?=$resource_type;?>" resource-id="<?=$resource_id;?>"></i></a></li>
 					<?php
 				endif;
@@ -415,12 +414,12 @@ if (!function_exists('comment_box'))
 	function comment_box($resource_id,$resource_type,$title,$limit,$hide_comment_input)
 	{
 		$CI =& get_instance();
-		$comments = $CI->mo9a7i_model->get_replies(array('resource_id'=>$resource_id));
+		$comments = $CI->mo9->get_replies(array('resource_id'=>$resource_id));
 		$comments_count = count($comments);
 		$has_more = FALSE;
 		if(isset($limit))
 		{
-			$comments = $CI->mo9a7i_model->get_replies(array('resource_id'=>$resource_id,'limit'=>$limit));
+			$comments = $CI->mo9->get_replies(array('resource_id'=>$resource_id,'limit'=>$limit));
 			$has_more = ($comments_count > $limit);
 			//echo $has_more;
 		}
@@ -619,7 +618,7 @@ if (!function_exists('breaking_news'))
 	function breaking_news()
 	{
 		$CI =& get_instance();
-		if($CI->mo9a7i_model->get_annoucements(null,1)->num_rows >0) : ?>
+		if($CI->mo9->get_annoucements(null,1)->num_rows >0) : ?>
 
 		<div id="annoucements">
 		<button type="button" class="close" data-dismiss="alert">&times;</button>
@@ -628,7 +627,7 @@ if (!function_exists('breaking_news'))
 				<div class="ajel gess2b">عاجل</div>
 				<div class="newsfeed">
 				<?php 
-				$anns = $CI->mo9a7i_model->get_annoucements(null,1)->result();
+				$anns = $CI->mo9->get_annoucements(null,1)->result();
 				foreach($anns as $an)
 				{
 					?>

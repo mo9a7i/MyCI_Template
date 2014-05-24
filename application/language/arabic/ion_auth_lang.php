@@ -21,7 +21,7 @@ $lang['account_creation_duplicate_username'] 	 = 'اسم المستخدم تم �
 
 
 // Password
-$lang['password_change_successful'] 	 	 = 'تم تغيير كلمة السر, إستخدم كلمة السر الجديدة للدخول (قد تجدها في بريدك الإلكتروني)';
+$lang['password_change_successful'] 	 	 = 'تم تغيير كلمة السر';
 $lang['password_change_unsuccessful'] 	  	 = 'لا يمكن تغيير كلمة السر';
 $lang['forgot_password_successful'] 	 	 = 'تم ارسال بريد لإستعادة كلمة السر';
 $lang['forgot_password_unsuccessful'] 	 	 = 'لا يمكن استعادة كلمة السر';
@@ -44,3 +44,8 @@ $lang['update_successful'] 		 	 = 'تم تعديل معلومات حسابك';
 $lang['update_unsuccessful'] 		 	 = 'لا يمكن تعديل معلومات الحساب';
 $lang['delete_successful'] 		 	 = 'تم إلغاء المستخدم';
 $lang['delete_unsuccessful'] 		 	 = 'لا يمكن إلغاء المستخدم';
+
+// Email Subjects - TODO Please Translate
+$lang['email_forgotten_password_subject']    = 'Forgotten Password Verification';
+$lang['email_new_password_subject']          = 'New Password';
+$lang['email_activation_subject']            = 'Account Activation';

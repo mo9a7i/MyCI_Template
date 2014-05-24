@@ -1,7 +1,7 @@
-<html dir="rtl">
+<html>
 <body>
-	<h1>كلمة السر الجديدة لـ:  <?php echo $identity;?></h1>
-	
-	<p>كلمة سرك الجديدة هي: <?php echo $new_password;?></p>
+	<h1><?php echo sprintf(lang('email_new_password_heading'), $identity);?></h1>
+
+	<p><?php echo sprintf(lang('email_new_password_subheading'), $new_password);?></p>
 </body>
 </html>

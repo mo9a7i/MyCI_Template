@@ -35,7 +35,7 @@
 			<ol>
 			<?php foreach($comments as $comment): ?>
 			
-				<li class="last_reply"><strong dir=rtl ><?=$comment->author_link;?> : </strong> <a href="<?=base_url()."jokes/".urlencode($this->mo9a7i_model->get_post_slug($comment->resource_id)->slug)."/#comment-".$comment->id;?>"><?=mb_substr($comment->content,0,100,'utf-8');?></a></li>
+				<li class="last_reply"><strong dir=rtl ><?=$comment->author_link;?> : </strong> <a href="<?=base_url()."jokes/".urlencode($this->mo9->get_post_slug($comment->resource_id)->slug)."/#comment-".$comment->id;?>"><?=mb_substr($comment->content,0,100,'utf-8');?></a></li>
 			<?php endforeach; ?>
 			
 			</ol>

@@ -2,7 +2,7 @@
 /**
 * F6sny.com 
 * ===========
-* Coded by: 	Mohannad Otaibi
+* code
 * Email: 		mohannad.otaibi@gmail.com
 * Website:		http://www.mohannadotaibi.com
 * Date:			3/20/2012 *My 26th Birthday
@@ -15,7 +15,7 @@ class Globals
 		{
 			$data[$key] = $value;
 		}
-		$data['tags'] = $this->mo9a7i_model->get_tags();
+		$data['tags'] = $this->mo9->get_tags();
 		//echo "Hi";die();
 		
 		$CI =& get_instance();

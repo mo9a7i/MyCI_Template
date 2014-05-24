@@ -2586,7 +2586,7 @@ $(function(){
                           .css('padding-right', 24)
                           .keyup($.proxy(function(e) {
                               //arrows, enter, tab, etc
-                              if(~$.inArray(e.keyCode, [40,38,9,13,27])) {
+                              if(~$.inArray(e.keycode, [40,38,9,13,27])) {
                                 return;
                               }                            
 
@@ -2728,7 +2728,7 @@ $(function(){
                 return '';
             }
 
-            var regex = new RegExp(String.fromCharCode(10), 'g');
+            var regex = new RegExp(String.fromCharcode(10), 'g');
             var lines = html.split(/<br\s*\/?>/i);
             for (var i = 0; i < lines.length; i++) {
                 var text = $('<div>').html(lines[i]).text();
@@ -5119,14 +5119,14 @@ Automatically shown in inline mode.
 
 		keydown: function(e){
 			if (this.picker.is(':not(:visible)')){
-				if (e.keyCode == 27) // allow escape to hide and re-show picker
+				if (e.keycode == 27) // allow escape to hide and re-show picker
 					this.show();
 				return;
 			}
 			var dateChanged = false,
 				dir, day, month,
 				newDate, newViewDate;
-			switch(e.keyCode){
+			switch(e.keycode){
 				case 27: // escape
 					this.hide();
 					e.preventDefault();
@@ -5134,7 +5134,7 @@ Automatically shown in inline mode.
 				case 37: // left
 				case 39: // right
 					if (!this.keyboardNavigation) break;
-					dir = e.keyCode == 37 ? -1 : 1;
+					dir = e.keycode == 37 ? -1 : 1;
 					if (e.ctrlKey){
 						newDate = this.moveYear(this.date, dir);
 						newViewDate = this.moveYear(this.viewDate, dir);
@@ -5159,7 +5159,7 @@ Automatically shown in inline mode.
 				case 38: // up
 				case 40: // down
 					if (!this.keyboardNavigation) break;
-					dir = e.keyCode == 38 ? -1 : 1;
+					dir = e.keycode == 38 ? -1 : 1;
 					if (e.ctrlKey){
 						newDate = this.moveYear(this.date, dir);
 						newViewDate = this.moveYear(this.viewDate, dir);
@@ -5656,7 +5656,7 @@ $(function(){
         typeaheadMove: function (e) {
           if (!this.shown) return
 
-          switch(e.keyCode) {
+          switch(e.keycode) {
             case 9: // tab
             case 13: // enter
             case 27: // escape

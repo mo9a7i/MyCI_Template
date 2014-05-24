@@ -345,7 +345,7 @@ class Sitemaps
     /**
      * Notify search engines of your updates sitemap
      *
-     * @param string $url_xml absolute URL of your sitemap, use Codeigniter's site_url()
+     * @param string $url_xml absolute URL of your sitemap, use codeigniter's site_url()
      * @param array $search_engines array of search engines to ping, see config file for notes
      * @access public
      * @return array HTTP reponse codes

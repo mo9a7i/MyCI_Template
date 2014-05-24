@@ -2,7 +2,7 @@
 /**
 * F6sny.com 
 * ===========
-* Coded by: 	Mohannad Otaibi
+* code
 * Email: 		mohannad.otaibi@gmail.com
 * Website:		http://www.mohannadotaibi.com
 * Date:			3/20/2012 *My 26th Birthday
@@ -35,10 +35,10 @@ class Sitemap extends CI_Controller{
         // Show the sitemap
 		
 		$data['title'] = "خريطة الموقع";
-		$data['comments'] = $this->mo9a7i_model->get_replies(array('status_id'=>1,'limit'=>100));
-		$data['jokes'] = $this->mo9a7i_model->get_posts(array('status_id'=>1,'limit'=>100));
+		$data['comments'] = $this->mo9->get_replies(array('status_id'=>1,'limit'=>100));
+		$data['jokes'] = $this->mo9->get_posts(array('status_id'=>1,'limit'=>100));
 		$data['main_content'] = 'sitemap';
-		$this->load->view('includes/template', $data);
+		$this->load->view('template/template', $data);
 		
 		
         // echo '<h1>Sitemap</h1>';

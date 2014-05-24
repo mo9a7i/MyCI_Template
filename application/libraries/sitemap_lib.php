@@ -4,12 +4,12 @@
  * A very simple sitemap link generator
  *
  * This class uses the PHP5 Reflection class to find all the public methods
- * in a CodeIgniter controller class and generate a list of links.
+ * in a codeIgniter controller class and generate a list of links.
  *
  * @author         Jonathon Hill <jonathon@compwright.com>
- * @license        CodeIgniter license
+ * @license        codeIgniter license
  * @requires    MY_Parser extended Parser class [added sparse() for parsing templates stored in a string var]
- * @requires    CodeIgniter 1.6 and PHP5
+ * @requires    codeIgniter 1.6 and PHP5
  * @version        1.1
  *
  */
@@ -17,7 +17,7 @@ class sitemap_lib {
 
 
     /**
-     * CodeIgniter base object reference
+     * codeIgniter base object reference
      *
      * @var object
      */

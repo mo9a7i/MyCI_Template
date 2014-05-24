@@ -33,9 +33,9 @@
  */
 
 /**
-* Recaptcha modified to integrate easily with Code Igniter
+* Recaptcha modified to integrate easily with code Igniter
 *
-* @package     CodeIgniter
+* @package     codeIgniter
 * @subpackage  Libraries
 * @category    Captcha
 * @author      Jon Trelfa <jtrelfa@gmail.com>
