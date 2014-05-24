@@ -1,6 +1,6 @@
 <?php
 /*
-Twitter Bootstrap model for CodeIgniter Pagination Class
+Twitter Bootstrap model for codeIgniter Pagination Class
 v2.0.3
 */
 $config['per_page'] = 20;

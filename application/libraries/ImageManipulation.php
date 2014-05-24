@@ -5,9 +5,9 @@
  * For more information on this file and how to use the class please visit
  * http://www.talkincode.com/
  *
- * @author 	  Tech @ Talk In Code
+ * @author 	  Tech @ Talk In code
  * @version   1.0
- * @copyright 2009 Talk In Code
+ * @copyright 2009 Talk In code
  */
 
 /**

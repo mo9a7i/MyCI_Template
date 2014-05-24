@@ -263,7 +263,7 @@ class CKEditor
 	 * Events are fired by %CKEditor in various situations.
 	 *
 	 * @param $event (string) Event name.
-	 * @param $javascriptCode (string) Javascript anonymous function or function name.
+	 * @param $javascriptcode (string) Javascript anonymous function or function name.
 	 *
 	 * Example usage:
 	 * @code
@@ -272,14 +272,14 @@ class CKEditor
 	 * }');
 	 * @endcode
 	 */
-	function addEventHandler($event, $javascriptCode)
+	function addEventHandler($event, $javascriptcode)
 	{
 		if (!isset($this->_events[$event])) {
 			$this->_events[$event] = array();
 		}
 		// Avoid duplicates.
-		if (!in_array($javascriptCode, $this->_events[$event])) {
-			$this->_events[$event][] = $javascriptCode;
+		if (!in_array($javascriptcode, $this->_events[$event])) {
+			$this->_events[$event][] = $javascriptcode;
 		}
 	}
 
@@ -303,7 +303,7 @@ class CKEditor
 	 * Adds global event listener.
 	 *
 	 * @param $event (string) Event name.
-	 * @param $javascriptCode (string) Javascript anonymous function or function name.
+	 * @param $javascriptcode (string) Javascript anonymous function or function name.
 	 *
 	 * Example usage:
 	 * @code
@@ -312,14 +312,14 @@ class CKEditor
 	 * }');
 	 * @endcode
 	 */
-	function addGlobalEventHandler($event, $javascriptCode)
+	function addGlobalEventHandler($event, $javascriptcode)
 	{
 		if (!isset($this->_globalEvents[$event])) {
 			$this->_globalEvents[$event] = array();
 		}
 		// Avoid duplicates.
-		if (!in_array($javascriptCode, $this->_globalEvents[$event])) {
-			$this->_globalEvents[$event][] = $javascriptCode;
+		if (!in_array($javascriptcode, $this->_globalEvents[$event])) {
+			$this->_globalEvents[$event][] = $javascriptcode;
 		}
 	}
 
@@ -467,12 +467,12 @@ class CKEditor
 
 		$out .= "<script type=\"text/javascript\" src=\"" . $ckeditorPath . 'ckeditor.js' . $args . "\"></script>\n";
 
-		$extraCode = "";
+		$extracode = "";
 		if ($this->timestamp != $this->_timestamp) {
-			$extraCode .= ($extraCode ? "\n" : "") . "CKEDITOR.timestamp = '". $this->timestamp ."';";
+			$extracode .= ($extracode ? "\n" : "") . "CKEDITOR.timestamp = '". $this->timestamp ."';";
 		}
-		if ($extraCode) {
-			$out .= $this->script($extraCode);
+		if ($extracode) {
+			$out .= $this->script($extracode);
 		}
 
 		$initComplete = $this->initialized = true;

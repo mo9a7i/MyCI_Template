@@ -1,11 +1,11 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
- * CodeIgniter Curl Class
+ * codeIgniter Curl Class
  *
  * Work with remote servers via cURL much easier than using the native PHP bindings.
  *
- * @package        	CodeIgniter
+ * @package        	codeIgniter
  * @subpackage    	Libraries
  * @category    	Libraries
  * @author        	Philip Sturgeon
@@ -14,7 +14,7 @@
  */
 class Curl {
 
-	protected $_ci;                 // CodeIgniter instance
+	protected $_ci;                 // codeIgniter instance
 	protected $response = '';       // Contains the cURL response for debug
 	protected $session;             // Contains the cURL handler for a session
 	protected $url;                 // URL of the session
@@ -39,9 +39,9 @@ class Curl {
 
 	public function __call($method, $arguments)
 	{
-		if (in_array($method, array('simple_get', 'simple_post', 'simple_put', 'simple_delete')))
+		if (in_array($method, array('simple_get', 'simple_post', 'simple_put', 'simple_delete', 'simple_patch')))
 		{
-			// Take off the "simple_" and past get/post/put/delete to _simple_call
+			// Take off the "simple_" and past get/post/put/delete/patch to _simple_call
 			$verb = str_replace('simple_', '', $method);
 			array_unshift($arguments, $verb);
 			return call_user_func_array(array($this, '_simple_call'), $arguments);
@@ -147,6 +147,24 @@ class Curl {
 		$this->option(CURLOPT_HTTPHEADER, array('X-HTTP-Method-Override: PUT'));
 	}
 
+	public function patch($params = array(), $options = array())
+	{
+		// If its an array (instead of a query string) then format it correctly
+		if (is_array($params))
+		{
+			$params = http_build_query($params, NULL, '&');
+		}
+
+		// Add in the specific options provided
+		$this->options($options);
+
+		$this->http_method('patch');
+		$this->option(CURLOPT_POSTFIELDS, $params);
+
+		// Override method, I think this overrides $_POST with PATCH data but... we'll see eh?
+		$this->option(CURLOPT_HTTPHEADER, array('X-HTTP-Method-Override: PATCH'));
+	}
+
 	public function delete($params, $options = array())
 	{
 		// If its an array (instead of a query string) then format it correctly
@@ -220,6 +238,7 @@ class Curl {
 		else
 		{
 			$this->option(CURLOPT_SSL_VERIFYPEER, FALSE);
+			$this->option(CURLOPT_SSL_VERIFYHOST, $verify_host);
 		}
 		return $this;
 	}
@@ -238,11 +257,11 @@ class Curl {
 		return $this;
 	}
 
-	public function option($code, $value)
+	public function option($code, $value, $prefix = 'opt')
 	{
 		if (is_string($code) && !is_numeric($code))
 		{
-			$code = constant('CURLOPT_' . strtoupper($code));
+			$code = constant('CURL' . strtoupper($prefix) . '_' . strtoupper($code));
 		}
 
 		$this->options[$code] = $value;
@@ -302,19 +321,19 @@ class Curl {
 		// Execute the request & and hide all output
 		$this->response = curl_exec($this->session);
 		$this->info = curl_getinfo($this->session);
-		
+
 		// Request failed
 		if ($this->response === FALSE)
 		{
 			$errno = curl_errno($this->session);
 			$error = curl_error($this->session);
-			
+
 			curl_close($this->session);
 			$this->set_defaults();
-			
+
 			$this->error_code = $errno;
 			$this->error_string = $error;
-			
+
 			return FALSE;
 		}
 
@@ -345,7 +364,7 @@ class Curl {
 		{
 			echo "=============================================<br/>\n";
 			echo "<h3>Errors</h3>";
-			echo "<strong>Code:</strong> " . $this->error_code . "<br/>\n";
+			echo "<strong>code:</strong> " . $this->error_code . "<br/>\n";
 			echo "<strong>Message:</strong> " . $this->error_string . "<br/>\n";
 		}
 

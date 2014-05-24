@@ -1,10 +1,10 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * CodeIgniter
+ * codeIgniter
  *
  * An open source application development framework for PHP 5.1.6 or newer
  *
- * @package		CodeIgniter
+ * @package		codeIgniter
  * @author		ExpressionEngine Dev Team
  * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
@@ -28,7 +28,7 @@ if ( ! class_exists('CI_Xmlrpc'))
 /**
  * XML-RPC server class
  *
- * @package		CodeIgniter
+ * @package		codeIgniter
  * @subpackage	Libraries
  * @category	XML-RPC
  * @author		ExpressionEngine Dev Team
@@ -212,7 +212,7 @@ class CI_Xmlrpcs extends CI_Xmlrpc
 
 		if ( ! xml_parse($parser, $data, 1))
 		{
-			// return XML error as a faultCode
+			// return XML error as a faultcode
 			$r = new XML_RPC_Response(0,
 			$this->xmlrpcerrxml + xml_get_error_code($parser),
 			sprintf('XML error: %s at line %d',
@@ -514,7 +514,7 @@ class CI_Xmlrpcs extends CI_Xmlrpc
 
 			$attempt = $this->_execute($m);
 
-			if ($attempt->faultCode() != 0)
+			if ($attempt->faultcode() != 0)
 			{
 				return $attempt;
 			}
@@ -537,9 +537,9 @@ class CI_Xmlrpcs extends CI_Xmlrpc
 	function multicall_error($err)
 	{
 		$str  = is_string($err) ? $this->xmlrpcstr["multicall_${err}"] : $err->faultString();
-		$code = is_string($err) ? $this->xmlrpcerr["multicall_${err}"] : $err->faultCode();
+		$code = is_string($err) ? $this->xmlrpcerr["multicall_${err}"] : $err->faultcode();
 
-		$struct['faultCode'] = new XML_RPC_Values($code, 'int');
+		$struct['faultcode'] = new XML_RPC_Values($code, 'int');
 		$struct['faultString'] = new XML_RPC_Values($str, 'string');
 
 		return new XML_RPC_Values($struct, 'struct');
@@ -596,7 +596,7 @@ class CI_Xmlrpcs extends CI_Xmlrpc
 
 		$result = $this->_execute($msg);
 
-		if ($result->faultCode() != 0)
+		if ($result->faultcode() != 0)
 		{
 			return $this->multicall_error($result);
 		}

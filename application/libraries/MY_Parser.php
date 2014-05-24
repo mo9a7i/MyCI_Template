@@ -5,7 +5,7 @@
 /**
  * Sparser Class
  *
- * @package        CodeIgniter
+ * @package        codeIgniter
  * @subpackage    Libraries
  * @category    Parser
  * @author        Jonathon Hill

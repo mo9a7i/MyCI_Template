@@ -1,10 +1,10 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * CodeIgniter
+ * codeIgniter
  *
  * An open source application development framework for PHP 5.1.6 or newer
  *
- * @package		CodeIgniter
+ * @package		codeIgniter
  * @author		ExpressionEngine Dev Team
  * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
@@ -16,11 +16,11 @@
 // ------------------------------------------------------------------------
 
 /**
- * CodeIgniter Config Class
+ * codeIgniter Config Class
  *
  * This class contains functions that enable config files to be managed
  *
- * @package		CodeIgniter
+ * @package		codeIgniter
  * @subpackage	Libraries
  * @category	Libraries
  * @author		ExpressionEngine Dev Team
@@ -353,7 +353,7 @@ class CI_Config {
 	/**
 	 * Assign to Config
 	 *
-	 * This function is called by the front controller (CodeIgniter.php)
+	 * This function is called by the front controller (codeIgniter.php)
 	 * after the Config class is instantiated.  It permits config items
 	 * to be assigned or overriden by variables contained in the index.php file
 	 *

@@ -1,10 +1,10 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
- * CodeIgniter
+ * codeIgniter
  *
  * An open source application development framework for PHP 5.1.6 or newer
  *
- * @package		CodeIgniter
+ * @package		codeIgniter
  * @copyright	Copyright (c) 2008 - 2011, EllisLab, Inc.
  * @license		http://codeigniter.com/user_guide/license.html
  * @author		EllisLab Dev Team
@@ -22,7 +22,7 @@
  * creates dynamically based on whether the active record
  * class is being used or not.
  *
- * @package		CodeIgniter
+ * @package		codeIgniter
  * @subpackage	Drivers
  * @category	Database
  * @author		EllisLab Dev Team
@@ -504,7 +504,7 @@ class CI_DB_pdo_driver extends CI_DB {
 	 */
 	function _error_number()
 	{
-		return $this->conn_id->errorCode();
+		return $this->conn_id->errorcode();
 	}
 
 	// --------------------------------------------------------------------

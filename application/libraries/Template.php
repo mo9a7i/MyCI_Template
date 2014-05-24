@@ -1,11 +1,11 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 
 /**
- * CodeIgniter Template Class
+ * codeIgniter Template Class
  *
- * Build your CodeIgniter pages much easier with partials, breadcrumbs, layouts and themes
+ * Build your codeIgniter pages much easier with partials, breadcrumbs, layouts and themes
  *
- * @package			CodeIgniter
+ * @package			codeIgniter
  * @subpackage		Libraries
  * @category		Libraries
  * @author			Philip Sturgeon

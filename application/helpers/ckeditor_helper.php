@@ -2,10 +2,10 @@
 if(!defined('BASEPATH')) exit('No direct script access allowed');
 
 /*
- * CKEditor helper for CodeIgniter
+ * CKEditor helper for codeIgniter
  * 
  * @author Samuel Sanchez <samuel.sanchez.work@gmail.com> - http://kromack.com/
- * @package CodeIgniter
+ * @package codeIgniter
  * @license http://creativecommons.org/licenses/by-nc-sa/3.0/us/
  * @tutorial http://kromack.com/developpement-php/codeigniter/ckeditor-helper-for-codeigniter/
  * @see http://codeigniter.com/forums/viewthread/127374/

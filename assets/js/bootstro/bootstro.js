@@ -236,7 +236,7 @@ $(document).ready(function(){
                 
             //bind the key event
             $(document).on('keydown.bootstro', function(e){
-                var code = (e.keyCode ? e.keyCode : e.which);
+                var code = (e.keycode ? e.keycode : e.which);
                 if (code == 39 || code == 40)
                     bootstro.next();
                 else if (code == 37 || code == 38)

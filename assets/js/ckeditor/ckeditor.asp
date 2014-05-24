@@ -294,7 +294,7 @@ Class CKEditor
 	 ' Events are fired by %CKEditor in various situations.
 	 '
 	 ' @param eventName (string) Event name.
-	 ' @param javascriptCode (string) Javascript anonymous function or function name.
+	 ' @param javascriptcode (string) Javascript anonymous function or function name.
 	 '
 	 ' Example usage:
 	 ' @code
@@ -303,7 +303,7 @@ Class CKEditor
 	 ' "}"
 	 ' @endcode
 	 '
-	public sub addEventHandler(eventName, javascriptCode)
+	public sub addEventHandler(eventName, javascriptcode)
 		if not(oAllInstancesEvents.Exists( eventName ) ) then
 			oAllInstancesEvents.Add eventName, Array()
 		end if
@@ -312,12 +312,12 @@ Class CKEditor
 		listeners = oAllInstancesEvents( eventName )
 		size = ubound(listeners) + 1
 		redim preserve listeners(size)
-		listeners(size) = javascriptCode
+		listeners(size) = javascriptcode
 
 		oAllInstancesEvents( eventName ) = listeners
 '		'' Avoid duplicates. fixme...
-'		if (!in_array($javascriptCode, $this->_events[$event])) {
-'			$this->_events[$event][] = $javascriptCode;
+'		if (!in_array($javascriptcode, $this->_events[$event])) {
+'			$this->_events[$event][] = $javascriptcode;
 '		}
 	end sub
 
@@ -341,7 +341,7 @@ Class CKEditor
 	 ' Events are fired by %CKEditor in various situations.
 	 '
 	 ' @param eventName (string) Event name.
-	 ' @param javascriptCode (string) Javascript anonymous function or function name.
+	 ' @param javascriptcode (string) Javascript anonymous function or function name.
 	 '
 	 ' Example usage:
 	 ' @code
@@ -350,7 +350,7 @@ Class CKEditor
 	 ' "}"
 	 ' @endcode
 	 '
-	public sub addInstanceEventHandler(eventName, javascriptCode)
+	public sub addInstanceEventHandler(eventName, javascriptcode)
 		if not(oInstanceEvents.Exists( eventName ) ) then
 			oInstanceEvents.Add eventName, Array()
 		end if
@@ -359,12 +359,12 @@ Class CKEditor
 		listeners = oInstanceEvents( eventName )
 		size = ubound(listeners) + 1
 		redim preserve listeners(size)
-		listeners(size) = javascriptCode
+		listeners(size) = javascriptcode
 
 		oInstanceEvents( eventName ) = listeners
 '		'' Avoid duplicates. fixme...
-'		if (!in_array($javascriptCode, $this->_events[$event])) {
-'			$this->_events[$event][] = $javascriptCode;
+'		if (!in_array($javascriptcode, $this->_events[$event])) {
+'			$this->_events[$event][] = $javascriptcode;
 '		}
 	end sub
 
@@ -386,7 +386,7 @@ Class CKEditor
 	 ' Adds global event listener.
 	 '
 	 ' @param event (string) Event name.
-	 ' @param javascriptCode (string) Javascript anonymous function or function name.
+	 ' @param javascriptcode (string) Javascript anonymous function or function name.
 	 '
 	 ' Example usage:
 	 ' @code
@@ -395,7 +395,7 @@ Class CKEditor
 	 ' "}"
 	 ' @endcode
 	 '
-	public sub addGlobalEventHandler( eventName, javascriptCode)
+	public sub addGlobalEventHandler( eventName, javascriptcode)
 		if not(oGlobalEvents.Exists( eventName ) ) then
 			oGlobalEvents.Add eventName, Array()
 		end if
@@ -404,13 +404,13 @@ Class CKEditor
 		listeners = oGlobalEvents( eventName )
 		size = ubound(listeners) + 1
 		redim preserve listeners(size)
-		listeners(size) = javascriptCode
+		listeners(size) = javascriptcode
 
 		oGlobalEvents( eventName ) = listeners
 
 '		// Avoid duplicates.
-'		if (!in_array($javascriptCode, $this->_globalEvents[$event])) {
-'			$this->_globalEvents[$event][] = $javascriptCode;
+'		if (!in_array($javascriptcode, $this->_globalEvents[$event])) {
+'			$this->_globalEvents[$event][] = $javascriptcode;
 '		}
 	end sub
 
@@ -596,7 +596,7 @@ Class CKEditor
 	 ' Initializes CKEditor (executed only once).
 	 '
 	private function init()
-		dim out, args, path, extraCode, file
+		dim out, args, path, extracode, file
 		out = ""
 
 		if (CKEDITOR_initComplete) then
@@ -624,12 +624,12 @@ Class CKEditor
 
 		out = out & "<scr" & "ipt type=""text/javascript"" src=""" & path & ckeditorFileName() & args & """></scr" & "ipt>" & vbcrlf
 
-		extraCode = ""
+		extracode = ""
 		if (timestamp <> mTimeStamp) then
-			extraCode = extraCode & "CKEDITOR.timestamp = '" & timestamp & "';"
+			extracode = extracode & "CKEDITOR.timestamp = '" & timestamp & "';"
 		end if
-		if (extraCode <> "") then
-			out = out & script(extraCode)
+		if (extracode <> "") then
+			out = out & script(extracode)
 		end if
 
 		CKEDITOR_initComplete = true
